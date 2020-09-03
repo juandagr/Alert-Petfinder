@@ -1,0 +1,33 @@
+.pet-details-page {
+  grid-column: full-start / full-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  color: #ff7f00;
+
+  .carousel-container {
+    flex: 0 0 30%;
+  }
+
+  .details-container {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+
+    .title {
+      font-size: 6rem;
+    }
+
+    .breed-and-location {
+      font-size: 3rem;
+    }
+
+    .description {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+  }
+}

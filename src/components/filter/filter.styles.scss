@@ -1,0 +1,19 @@
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  padding: 2rem;
+
+  @media only screen and (max-width: 62.5em) {
+    grid-column: full-start / full-end;
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  &__select_title {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+}

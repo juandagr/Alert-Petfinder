@@ -1,0 +1,89 @@
+.pets-list-page {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns:
+    [full-start sidebar-start] 40rem [sidebar-end content-start] repeat(
+      8,
+      [col-start] 1fr [col-end]
+    )
+    [content-end full-end];
+  flex-direction: column;
+
+  .title {
+    align-self: center;
+    font-size: 7rem;
+    font-weight: 900;
+    color: #ff7f00;
+  }
+
+  .banner {
+    grid-column: full-start / full-end;
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+        to right,
+        rgba(#ff7f00, 0.4),
+        rgba(#d66c01, 0.4)
+      ),
+      url("../../assets/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
+
+    &__text-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+
+      &__title {
+        font-size: 13rem;
+      }
+
+      &__subtitle {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  .pagination {
+    grid-column: content-start / content-end;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 2rem 0;
+    font-size: 2rem;
+
+    @media only screen and (max-width: 62.5em) {
+      grid-column: full-start / full-end;
+    }
+
+    .item {
+      background-color: #ff7f00;
+      margin: 0.2rem;
+
+      &.active {
+        background-color: white;
+
+        .link.undefined {
+          color: #ff7f00;
+        }
+      }
+
+      .link:link,
+      .link:visited {
+        padding: 1rem 2rem;
+        height: 100%;
+        text-decoration: none;
+        display: block;
+        color: white;
+      }
+
+      .link:hover,
+      .link:active {
+        background-color: white;
+        color: #ed1d24;
+      }
+    }
+  }
+}
