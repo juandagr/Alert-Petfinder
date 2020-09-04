@@ -45,6 +45,14 @@ class PetsDetails extends Component {
           <p className="breed-and-location">
             {details.breeds.primary} &mdash; {details.gender}
           </p>
+          {details.tags.length > 0 ? (
+            <div className="tags-container">
+              {details.tags.map((tag) => (
+                <p className="tag">{tag}</p>
+              ))}
+            </div>
+          ) : null}
+
           <p className="description">{details.description}</p>
           <div className="environment-container">
             <div className="attribute">
