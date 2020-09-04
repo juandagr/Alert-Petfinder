@@ -31,8 +31,6 @@ class PetsPage extends Component {
 
     this.state = {
       petsPerPage: 24,
-      animalType: "",
-      animalBreed: "",
     };
   }
 
@@ -52,38 +50,11 @@ class PetsPage extends Component {
     });
   };
 
-  handleTypeChange = (event) => {
-    const { getPetsStart, getAnimalBreedsStart } = this.props;
-
-    this.setState({ animalType: event.value });
-    getPetsStart({
-      type: event.value,
-      petsPerPage: this.state.petsPerPage,
-      pageNumber: 1,
-      breed: "",
-    });
-    getAnimalBreedsStart(event.value);
-  };
-
-  handleBreedChange = (event) => {
-    const { getPetsStart } = this.props;
-
-    this.setState({ animalBreed: event.value });
-    getPetsStart({
-      type: this.state.animalType,
-      breed: event.value,
-      petsPerPage: this.state.petsPerPage,
-      pageNumber: 1,
-    });
-  };
-
   render() {
     const {
       selectCurrentPage,
       selectTotalPets,
-      selectAnimalTypes,
       selectCurrentPets,
-      selectAnimalBreeds,
     } = this.props;
     return (
       <div className="pets-list-page">
@@ -94,12 +65,7 @@ class PetsPage extends Component {
           </div>
         </div>
         <div className="sidebar">
-          <Filter
-            handleTypeChange={this.handleTypeChange}
-            handleBreedChange={this.handleBreedChange}
-            selectAnimalTypes={selectAnimalTypes}
-            selectAnimalBreeds={selectAnimalBreeds}
-          />
+          <Filter />
         </div>
         <PetsList pets={selectCurrentPets} />
         <Pagination
@@ -120,9 +86,7 @@ class PetsPage extends Component {
 const mapStateToProps = createStructuredSelector({
   selectCurrentPage: selectCurrentPage,
   selectTotalPets: selectTotalPets,
-  selectAnimalTypes: selectAnimalTypes,
   selectCurrentPets: selectCurrentPets,
-  selectAnimalBreeds: selectAnimalBreeds,
 });
 
 const mapDispatchToProps = (dispatch) => ({

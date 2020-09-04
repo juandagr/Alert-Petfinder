@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.1.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-chips": "^0.8.0",
     "react-dom": "^16.13.1",
     "react-icons": "^3.11.0",
     "react-js-pagination": "^3.0.3",
