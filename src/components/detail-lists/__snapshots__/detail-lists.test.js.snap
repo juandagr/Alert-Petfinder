@@ -1,0 +1,871 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render DetailLists component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DetailLists
+    attributes={
+      Object {
+        "house_trained": true,
+        "spayed_neutered": true,
+        "special_needs": false,
+      }
+    }
+    environment={
+      Object {
+        "cats": true,
+        "children": true,
+        "dogs": false,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="environment-container"
+        >
+          <div
+            className="attribute"
+          >
+            <IoIosCheckmark
+              className="icon"
+            />
+            <p>
+              House trained
+            </p>
+          </div>
+          <div
+            className="attribute"
+          >
+            <IoIosCheckmark
+              className="icon"
+            />
+            <p
+              className="name"
+            >
+              Spayed neutered
+            </p>
+          </div>
+        </div>,
+        <div
+          className="environment-container"
+        />,
+      ],
+      "className": "detail-lists-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="attribute"
+            >
+              <IoIosCheckmark
+                className="icon"
+              />
+              <p>
+                House trained
+              </p>
+            </div>,
+            <div
+              className="attribute"
+            >
+              <IoIosCheckmark
+                className="icon"
+              />
+              <p
+                className="name"
+              >
+                Spayed neutered
+              </p>
+            </div>,
+            null,
+          ],
+          "className": "environment-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <IoIosCheckmark
+                  className="icon"
+                />,
+                <p>
+                  House trained
+                </p>,
+              ],
+              "className": "attribute",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "icon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "House trained",
+                },
+                "ref": null,
+                "rendered": "House trained",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <IoIosCheckmark
+                  className="icon"
+                />,
+                <p
+                  className="name"
+                >
+                  Spayed neutered
+                </p>,
+              ],
+              "className": "attribute",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "icon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Spayed neutered",
+                  "className": "name",
+                },
+                "ref": null,
+                "rendered": "Spayed neutered",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          null,
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            null,
+            null,
+            null,
+          ],
+          "className": "environment-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          null,
+          null,
+          null,
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="environment-container"
+          >
+            <div
+              className="attribute"
+            >
+              <IoIosCheckmark
+                className="icon"
+              />
+              <p>
+                House trained
+              </p>
+            </div>
+            <div
+              className="attribute"
+            >
+              <IoIosCheckmark
+                className="icon"
+              />
+              <p
+                className="name"
+              >
+                Spayed neutered
+              </p>
+            </div>
+          </div>,
+          <div
+            className="environment-container"
+          />,
+        ],
+        "className": "detail-lists-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="attribute"
+              >
+                <IoIosCheckmark
+                  className="icon"
+                />
+                <p>
+                  House trained
+                </p>
+              </div>,
+              <div
+                className="attribute"
+              >
+                <IoIosCheckmark
+                  className="icon"
+                />
+                <p
+                  className="name"
+                >
+                  Spayed neutered
+                </p>
+              </div>,
+              null,
+            ],
+            "className": "environment-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <IoIosCheckmark
+                    className="icon"
+                  />,
+                  <p>
+                    House trained
+                  </p>,
+                ],
+                "className": "attribute",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "icon",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "House trained",
+                  },
+                  "ref": null,
+                  "rendered": "House trained",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <IoIosCheckmark
+                    className="icon"
+                  />,
+                  <p
+                    className="name"
+                  >
+                    Spayed neutered
+                  </p>,
+                ],
+                "className": "attribute",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "icon",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Spayed neutered",
+                    "className": "name",
+                  },
+                  "ref": null,
+                  "rendered": "Spayed neutered",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            null,
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              null,
+              null,
+              null,
+            ],
+            "className": "environment-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            null,
+            null,
+            null,
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;
+
+exports[`expect to render PetCard component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DetailLists
+    attributes={
+      Object {
+        "house_trained": true,
+        "spayed_neutered": true,
+        "special_needs": false,
+      }
+    }
+    environment={
+      Object {
+        "cats": true,
+        "children": true,
+        "dogs": false,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="environment-container"
+        >
+          <div
+            className="attribute"
+          >
+            <IoIosCheckmark
+              className="icon"
+            />
+            <p>
+              House trained
+            </p>
+          </div>
+          <div
+            className="attribute"
+          >
+            <IoIosCheckmark
+              className="icon"
+            />
+            <p
+              className="name"
+            >
+              Spayed neutered
+            </p>
+          </div>
+        </div>,
+        <div
+          className="environment-container"
+        />,
+      ],
+      "className": "detail-lists-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="attribute"
+            >
+              <IoIosCheckmark
+                className="icon"
+              />
+              <p>
+                House trained
+              </p>
+            </div>,
+            <div
+              className="attribute"
+            >
+              <IoIosCheckmark
+                className="icon"
+              />
+              <p
+                className="name"
+              >
+                Spayed neutered
+              </p>
+            </div>,
+            null,
+          ],
+          "className": "environment-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <IoIosCheckmark
+                  className="icon"
+                />,
+                <p>
+                  House trained
+                </p>,
+              ],
+              "className": "attribute",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "icon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "House trained",
+                },
+                "ref": null,
+                "rendered": "House trained",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <IoIosCheckmark
+                  className="icon"
+                />,
+                <p
+                  className="name"
+                >
+                  Spayed neutered
+                </p>,
+              ],
+              "className": "attribute",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "icon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Spayed neutered",
+                  "className": "name",
+                },
+                "ref": null,
+                "rendered": "Spayed neutered",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          null,
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            null,
+            null,
+            null,
+          ],
+          "className": "environment-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          null,
+          null,
+          null,
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="environment-container"
+          >
+            <div
+              className="attribute"
+            >
+              <IoIosCheckmark
+                className="icon"
+              />
+              <p>
+                House trained
+              </p>
+            </div>
+            <div
+              className="attribute"
+            >
+              <IoIosCheckmark
+                className="icon"
+              />
+              <p
+                className="name"
+              >
+                Spayed neutered
+              </p>
+            </div>
+          </div>,
+          <div
+            className="environment-container"
+          />,
+        ],
+        "className": "detail-lists-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="attribute"
+              >
+                <IoIosCheckmark
+                  className="icon"
+                />
+                <p>
+                  House trained
+                </p>
+              </div>,
+              <div
+                className="attribute"
+              >
+                <IoIosCheckmark
+                  className="icon"
+                />
+                <p
+                  className="name"
+                >
+                  Spayed neutered
+                </p>
+              </div>,
+              null,
+            ],
+            "className": "environment-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <IoIosCheckmark
+                    className="icon"
+                  />,
+                  <p>
+                    House trained
+                  </p>,
+                ],
+                "className": "attribute",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "icon",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "House trained",
+                  },
+                  "ref": null,
+                  "rendered": "House trained",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <IoIosCheckmark
+                    className="icon"
+                  />,
+                  <p
+                    className="name"
+                  >
+                    Spayed neutered
+                  </p>,
+                ],
+                "className": "attribute",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "icon",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Spayed neutered",
+                    "className": "name",
+                  },
+                  "ref": null,
+                  "rendered": "Spayed neutered",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            null,
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              null,
+              null,
+              null,
+            ],
+            "className": "environment-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            null,
+            null,
+            null,
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;

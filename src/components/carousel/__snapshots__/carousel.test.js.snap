@@ -1,0 +1,1023 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render CarouselDetails component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CarouselDetails
+    photos={
+      Array [
+        Object {
+          "large": "largephoto",
+        },
+        Object {
+          "large": "largephoto",
+        },
+        Object {
+          "large": "largephoto",
+        },
+      ]
+    }
+    status="adoptable"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Carousel
+          autoPlay={true}
+          axis="horizontal"
+          centerSlidePercentage={80}
+          infiniteLoop={true}
+          interval={3000}
+          labels={
+            Object {
+              "item": "slide item",
+              "leftArrow": "previous slide / item",
+              "rightArrow": "next slide / item",
+            }
+          }
+          onChange={[Function]}
+          onClickItem={[Function]}
+          onClickThumb={[Function]}
+          onSwipeEnd={[Function]}
+          onSwipeMove={[Function]}
+          onSwipeStart={[Function]}
+          renderArrowNext={[Function]}
+          renderArrowPrev={[Function]}
+          renderIndicator={[Function]}
+          renderItem={[Function]}
+          renderThumbs={[Function]}
+          selectedItem={0}
+          showArrows={true}
+          showIndicators={true}
+          showStatus={true}
+          showThumbs={false}
+          statusFormatter={[Function]}
+          stopOnHover={true}
+          swipeScrollTolerance={5}
+          swipeable={true}
+          transitionTime={350}
+          verticalSwipe="standard"
+          width="100%"
+        >
+          <div>
+            <img
+              alt="photo1"
+              src="largephoto"
+            />
+          </div>
+          <div>
+            <img
+              alt="photo1"
+              src="largephoto"
+            />
+          </div>
+          <div>
+            <img
+              alt="photo1"
+              src="largephoto"
+            />
+          </div>
+        </Carousel>,
+        <p
+          className="status"
+        >
+          ADOPTABLE
+        </p>,
+      ],
+      "className": "carousel-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoPlay": true,
+          "axis": "horizontal",
+          "centerSlidePercentage": 80,
+          "children": Array [
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>,
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>,
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>,
+          ],
+          "infiniteLoop": true,
+          "interval": 3000,
+          "labels": Object {
+            "item": "slide item",
+            "leftArrow": "previous slide / item",
+            "rightArrow": "next slide / item",
+          },
+          "onChange": [Function],
+          "onClickItem": [Function],
+          "onClickThumb": [Function],
+          "onSwipeEnd": [Function],
+          "onSwipeMove": [Function],
+          "onSwipeStart": [Function],
+          "renderArrowNext": [Function],
+          "renderArrowPrev": [Function],
+          "renderIndicator": [Function],
+          "renderItem": [Function],
+          "renderThumbs": [Function],
+          "selectedItem": 0,
+          "showArrows": true,
+          "showIndicators": true,
+          "showStatus": true,
+          "showThumbs": false,
+          "statusFormatter": [Function],
+          "stopOnHover": true,
+          "swipeScrollTolerance": 5,
+          "swipeable": true,
+          "transitionTime": 350,
+          "verticalSwipe": "standard",
+          "width": "100%",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "largephoto",
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="photo1"
+                src="largephoto"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "photo1",
+                "src": "largephoto",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "largephoto",
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="photo1"
+                src="largephoto"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "photo1",
+                "src": "largephoto",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "largephoto",
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="photo1"
+                src="largephoto"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "photo1",
+                "src": "largephoto",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "ADOPTABLE",
+          "className": "status",
+        },
+        "ref": null,
+        "rendered": "ADOPTABLE",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Carousel
+            autoPlay={true}
+            axis="horizontal"
+            centerSlidePercentage={80}
+            infiniteLoop={true}
+            interval={3000}
+            labels={
+              Object {
+                "item": "slide item",
+                "leftArrow": "previous slide / item",
+                "rightArrow": "next slide / item",
+              }
+            }
+            onChange={[Function]}
+            onClickItem={[Function]}
+            onClickThumb={[Function]}
+            onSwipeEnd={[Function]}
+            onSwipeMove={[Function]}
+            onSwipeStart={[Function]}
+            renderArrowNext={[Function]}
+            renderArrowPrev={[Function]}
+            renderIndicator={[Function]}
+            renderItem={[Function]}
+            renderThumbs={[Function]}
+            selectedItem={0}
+            showArrows={true}
+            showIndicators={true}
+            showStatus={true}
+            showThumbs={false}
+            statusFormatter={[Function]}
+            stopOnHover={true}
+            swipeScrollTolerance={5}
+            swipeable={true}
+            transitionTime={350}
+            verticalSwipe="standard"
+            width="100%"
+          >
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>
+          </Carousel>,
+          <p
+            className="status"
+          >
+            ADOPTABLE
+          </p>,
+        ],
+        "className": "carousel-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoPlay": true,
+            "axis": "horizontal",
+            "centerSlidePercentage": 80,
+            "children": Array [
+              <div>
+                <img
+                  alt="photo1"
+                  src="largephoto"
+                />
+              </div>,
+              <div>
+                <img
+                  alt="photo1"
+                  src="largephoto"
+                />
+              </div>,
+              <div>
+                <img
+                  alt="photo1"
+                  src="largephoto"
+                />
+              </div>,
+            ],
+            "infiniteLoop": true,
+            "interval": 3000,
+            "labels": Object {
+              "item": "slide item",
+              "leftArrow": "previous slide / item",
+              "rightArrow": "next slide / item",
+            },
+            "onChange": [Function],
+            "onClickItem": [Function],
+            "onClickThumb": [Function],
+            "onSwipeEnd": [Function],
+            "onSwipeMove": [Function],
+            "onSwipeStart": [Function],
+            "renderArrowNext": [Function],
+            "renderArrowPrev": [Function],
+            "renderIndicator": [Function],
+            "renderItem": [Function],
+            "renderThumbs": [Function],
+            "selectedItem": 0,
+            "showArrows": true,
+            "showIndicators": true,
+            "showStatus": true,
+            "showThumbs": false,
+            "statusFormatter": [Function],
+            "stopOnHover": true,
+            "swipeScrollTolerance": 5,
+            "swipeable": true,
+            "transitionTime": 350,
+            "verticalSwipe": "standard",
+            "width": "100%",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "largephoto",
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="photo1"
+                  src="largephoto"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "photo1",
+                  "src": "largephoto",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "largephoto",
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="photo1"
+                  src="largephoto"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "photo1",
+                  "src": "largephoto",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "largephoto",
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="photo1"
+                  src="largephoto"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "photo1",
+                  "src": "largephoto",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "ADOPTABLE",
+            "className": "status",
+          },
+          "ref": null,
+          "rendered": "ADOPTABLE",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;
+
+exports[`expect to render PetCard component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CarouselDetails
+    photos={
+      Array [
+        Object {
+          "large": "largephoto",
+        },
+        Object {
+          "large": "largephoto",
+        },
+        Object {
+          "large": "largephoto",
+        },
+      ]
+    }
+    status="adoptable"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Carousel
+          autoPlay={true}
+          axis="horizontal"
+          centerSlidePercentage={80}
+          infiniteLoop={true}
+          interval={3000}
+          labels={
+            Object {
+              "item": "slide item",
+              "leftArrow": "previous slide / item",
+              "rightArrow": "next slide / item",
+            }
+          }
+          onChange={[Function]}
+          onClickItem={[Function]}
+          onClickThumb={[Function]}
+          onSwipeEnd={[Function]}
+          onSwipeMove={[Function]}
+          onSwipeStart={[Function]}
+          renderArrowNext={[Function]}
+          renderArrowPrev={[Function]}
+          renderIndicator={[Function]}
+          renderItem={[Function]}
+          renderThumbs={[Function]}
+          selectedItem={0}
+          showArrows={true}
+          showIndicators={true}
+          showStatus={true}
+          showThumbs={false}
+          statusFormatter={[Function]}
+          stopOnHover={true}
+          swipeScrollTolerance={5}
+          swipeable={true}
+          transitionTime={350}
+          verticalSwipe="standard"
+          width="100%"
+        >
+          <div>
+            <img
+              alt="photo1"
+              src="largephoto"
+            />
+          </div>
+          <div>
+            <img
+              alt="photo1"
+              src="largephoto"
+            />
+          </div>
+          <div>
+            <img
+              alt="photo1"
+              src="largephoto"
+            />
+          </div>
+        </Carousel>,
+        <p
+          className="status"
+        >
+          ADOPTABLE
+        </p>,
+      ],
+      "className": "carousel-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoPlay": true,
+          "axis": "horizontal",
+          "centerSlidePercentage": 80,
+          "children": Array [
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>,
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>,
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>,
+          ],
+          "infiniteLoop": true,
+          "interval": 3000,
+          "labels": Object {
+            "item": "slide item",
+            "leftArrow": "previous slide / item",
+            "rightArrow": "next slide / item",
+          },
+          "onChange": [Function],
+          "onClickItem": [Function],
+          "onClickThumb": [Function],
+          "onSwipeEnd": [Function],
+          "onSwipeMove": [Function],
+          "onSwipeStart": [Function],
+          "renderArrowNext": [Function],
+          "renderArrowPrev": [Function],
+          "renderIndicator": [Function],
+          "renderItem": [Function],
+          "renderThumbs": [Function],
+          "selectedItem": 0,
+          "showArrows": true,
+          "showIndicators": true,
+          "showStatus": true,
+          "showThumbs": false,
+          "statusFormatter": [Function],
+          "stopOnHover": true,
+          "swipeScrollTolerance": 5,
+          "swipeable": true,
+          "transitionTime": 350,
+          "verticalSwipe": "standard",
+          "width": "100%",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "largephoto",
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="photo1"
+                src="largephoto"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "photo1",
+                "src": "largephoto",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "largephoto",
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="photo1"
+                src="largephoto"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "photo1",
+                "src": "largephoto",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "largephoto",
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="photo1"
+                src="largephoto"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "photo1",
+                "src": "largephoto",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "ADOPTABLE",
+          "className": "status",
+        },
+        "ref": null,
+        "rendered": "ADOPTABLE",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Carousel
+            autoPlay={true}
+            axis="horizontal"
+            centerSlidePercentage={80}
+            infiniteLoop={true}
+            interval={3000}
+            labels={
+              Object {
+                "item": "slide item",
+                "leftArrow": "previous slide / item",
+                "rightArrow": "next slide / item",
+              }
+            }
+            onChange={[Function]}
+            onClickItem={[Function]}
+            onClickThumb={[Function]}
+            onSwipeEnd={[Function]}
+            onSwipeMove={[Function]}
+            onSwipeStart={[Function]}
+            renderArrowNext={[Function]}
+            renderArrowPrev={[Function]}
+            renderIndicator={[Function]}
+            renderItem={[Function]}
+            renderThumbs={[Function]}
+            selectedItem={0}
+            showArrows={true}
+            showIndicators={true}
+            showStatus={true}
+            showThumbs={false}
+            statusFormatter={[Function]}
+            stopOnHover={true}
+            swipeScrollTolerance={5}
+            swipeable={true}
+            transitionTime={350}
+            verticalSwipe="standard"
+            width="100%"
+          >
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>
+            <div>
+              <img
+                alt="photo1"
+                src="largephoto"
+              />
+            </div>
+          </Carousel>,
+          <p
+            className="status"
+          >
+            ADOPTABLE
+          </p>,
+        ],
+        "className": "carousel-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoPlay": true,
+            "axis": "horizontal",
+            "centerSlidePercentage": 80,
+            "children": Array [
+              <div>
+                <img
+                  alt="photo1"
+                  src="largephoto"
+                />
+              </div>,
+              <div>
+                <img
+                  alt="photo1"
+                  src="largephoto"
+                />
+              </div>,
+              <div>
+                <img
+                  alt="photo1"
+                  src="largephoto"
+                />
+              </div>,
+            ],
+            "infiniteLoop": true,
+            "interval": 3000,
+            "labels": Object {
+              "item": "slide item",
+              "leftArrow": "previous slide / item",
+              "rightArrow": "next slide / item",
+            },
+            "onChange": [Function],
+            "onClickItem": [Function],
+            "onClickThumb": [Function],
+            "onSwipeEnd": [Function],
+            "onSwipeMove": [Function],
+            "onSwipeStart": [Function],
+            "renderArrowNext": [Function],
+            "renderArrowPrev": [Function],
+            "renderIndicator": [Function],
+            "renderItem": [Function],
+            "renderThumbs": [Function],
+            "selectedItem": 0,
+            "showArrows": true,
+            "showIndicators": true,
+            "showStatus": true,
+            "showThumbs": false,
+            "statusFormatter": [Function],
+            "stopOnHover": true,
+            "swipeScrollTolerance": 5,
+            "swipeable": true,
+            "transitionTime": 350,
+            "verticalSwipe": "standard",
+            "width": "100%",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "largephoto",
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="photo1"
+                  src="largephoto"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "photo1",
+                  "src": "largephoto",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "largephoto",
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="photo1"
+                  src="largephoto"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "photo1",
+                  "src": "largephoto",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "largephoto",
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="photo1"
+                  src="largephoto"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "photo1",
+                  "src": "largephoto",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "ADOPTABLE",
+            "className": "status",
+          },
+          "ref": null,
+          "rendered": "ADOPTABLE",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;

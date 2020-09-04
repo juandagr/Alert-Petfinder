@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render PetCard component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PetsList
+    pets={
+      Array [
+        Object {
+          "id": 1,
+        },
+        Object {
+          "id": 2,
+        },
+        Object {
+          "id": 3,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="pets-list"
+      >
+        <withRouter(PetCard)
+          pet={
+            Object {
+              "id": 1,
+            }
+          }
+        />
+        <withRouter(PetCard)
+          pet={
+            Object {
+              "id": 2,
+            }
+          }
+        />
+        <withRouter(PetCard)
+          pet={
+            Object {
+              "id": 3,
+            }
+          }
+        />
+      </div>,
+      "className": "pets-list-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <withRouter(PetCard)
+            pet={
+              Object {
+                "id": 1,
+              }
+            }
+          />,
+          <withRouter(PetCard)
+            pet={
+              Object {
+                "id": 2,
+              }
+            }
+          />,
+          <withRouter(PetCard)
+            pet={
+              Object {
+                "id": 3,
+              }
+            }
+          />,
+        ],
+        "className": "pets-list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "pet": Object {
+              "id": 1,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "pet": Object {
+              "id": 2,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "pet": Object {
+              "id": 3,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="pets-list"
+        >
+          <withRouter(PetCard)
+            pet={
+              Object {
+                "id": 1,
+              }
+            }
+          />
+          <withRouter(PetCard)
+            pet={
+              Object {
+                "id": 2,
+              }
+            }
+          />
+          <withRouter(PetCard)
+            pet={
+              Object {
+                "id": 3,
+              }
+            }
+          />
+        </div>,
+        "className": "pets-list-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <withRouter(PetCard)
+              pet={
+                Object {
+                  "id": 1,
+                }
+              }
+            />,
+            <withRouter(PetCard)
+              pet={
+                Object {
+                  "id": 2,
+                }
+              }
+            />,
+            <withRouter(PetCard)
+              pet={
+                Object {
+                  "id": 3,
+                }
+              }
+            />,
+          ],
+          "className": "pets-list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "pet": Object {
+                "id": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "function",
+            "props": Object {
+              "pet": Object {
+                "id": 2,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "function",
+            "props": Object {
+              "pet": Object {
+                "id": 3,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;
