@@ -12,9 +12,7 @@ import { connect } from "react-redux";
 import {
   selectCurrentPage,
   selectTotalPets,
-  selectAnimalTypes,
   selectCurrentPets,
-  selectAnimalBreeds,
 } from "../../redux/pets/pets.selectors";
 
 import PetsList from "./../../components/pets-list/pets-list.component";

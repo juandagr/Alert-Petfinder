@@ -5,18 +5,13 @@ import { getAnimalDetailsStart } from "../../redux/pets/pets.actions";
 import { createStructuredSelector } from "reselect";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 
 import "./pets-details-page.scss";
 
-import {
-  IoIosCheckmark,
-  IoIosClose,
-  IoIosMail,
-  IoMdCall,
-  IoIosPin,
-} from "react-icons/io";
+import { IoIosMail, IoMdCall, IoIosPin } from "react-icons/io";
 import CarouselDetails from "../../components/carousel/carousel.component";
+import DetailLists from "../../components/detail-lists/detail-lists.component";
+import { Link } from "react-router-dom";
 
 /**
  * Component that display the details of a pet in a page
@@ -52,90 +47,53 @@ class PetsDetails extends Component {
               ))}
             </div>
           ) : null}
-
           <p className="description">
             {details.description ? details.description : null}
           </p>
-          <div className="detail-lists-container">
-            <div className="environment-container">
-              <div className="attribute">
-                {details.attributes.house_trained ? (
-                  <IoIosCheckmark className="icon" />
-                ) : (
-                  <IoIosClose className="icon" />
-                )}
-                <p>House trained</p>
-              </div>
-              <div className="attribute">
-                {details.attributes.spayed_neutered ? (
-                  <IoIosCheckmark className="icon" />
-                ) : (
-                  <IoIosClose className="icon" />
-                )}
-                <p className="name">Spayed neutered</p>
-              </div>
-              <div className="attribute">
-                {details.attributes.special_needs ? (
-                  <IoIosCheckmark className="icon" />
-                ) : (
-                  <IoIosClose className="icon" />
-                )}
-                <p className="name">Special needs</p>
-              </div>
-            </div>
-            <div className="environment-container">
-              <div className="attribute">
-                {details.environment.cats ? (
-                  <IoIosCheckmark className="icon" />
-                ) : (
-                  <IoIosClose className="icon" />
-                )}
-                <p>Cats</p>
-              </div>
-              <div className="attribute">
-                {details.environment.children ? (
-                  <IoIosCheckmark className="icon" />
-                ) : (
-                  <IoIosClose className="icon" />
-                )}
-                <p className="name">Children</p>
-              </div>
-              <div className="attribute">
-                {details.environment.dogs ? (
-                  <IoIosCheckmark className="icon" />
-                ) : (
-                  <IoIosClose className="icon" />
-                )}
-                <p className="name">Dogs</p>
-              </div>
-            </div>
-          </div>
-          <p className="status-text">
-            This pet is ready to be adopted, if you want more info please click
-            <a className="text-button" href={details.url} target="_blank">
-              here
-            </a>
-          </p>
+          <DetailLists
+            attributes={details.attributes}
+            environment={details.environment}
+          />
+          {details.status === "adoptable" ? (
+            <p className="status-text">
+              This pet is ready to be adopted, if you want more info please
+              click
+              <a className="text-button" href={details.url} target="_blank">
+                here
+              </a>
+            </p>
+          ) : (
+            <p className="status-text">
+              This pet was adopted, but don't be discouraged, you can see more
+              pets in
+              <Link className="text-button" to="/">
+                our page
+              </Link>
+              , you sure will find the rigth for you
+            </p>
+          )}
           <h2 className="contact-info">Contact info</h2>
           <div className="contact-container">
-            <div className="address-container">
-              <p className="text">
-                <IoIosPin className="icon" />
-                {details.contact.address.address1}
-              </p>
-              <p className="text">
-                {details.contact.address.city}, {details.contact.address.state}{" "}
-                {details.contact.address.postcode}
-              </p>
+            <div className="contact-container__detail">
+              <IoIosPin className="icon" />
+              <div className="address-text">
+                <p className="text">{details.contact.address.address1}</p>
+                <p className="text">
+                  {details.contact.address.city},{" "}
+                  {details.contact.address.state}{" "}
+                  {details.contact.address.postcode}
+                </p>
+              </div>
+            </div>
+            <div className="contact-container__detail">
+              <IoIosMail className="icon" />
+              <p className="text">{details.contact.email}</p>
             </div>
 
-            <p className="text">
-              <IoIosMail className="icon" />
-              {details.contact.email}
-            </p>
-            <p className="text">
-              <IoMdCall className="icon" /> {details.contact.phone}
-            </p>
+            <div className="contact-container__detail">
+              <IoMdCall className="icon" />
+              <p className="text">{details.contact.phone}</p>
+            </div>
           </div>
         </div>
       </div>

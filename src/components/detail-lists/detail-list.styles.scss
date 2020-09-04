@@ -1,0 +1,16 @@
+.detail-lists-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .environment-container {
+    font-size: 2rem;
+    display: flex;
+    flex: 0 0 50%;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    .attribute {
+      display: flex;
+    }
+  }
+}
