@@ -38,10 +38,16 @@
 
       &__title {
         font-size: 13rem;
+        @media only screen and (max-width: 57em) {
+          font-size: 6rem;
+        }
       }
 
       &__subtitle {
         font-size: 5rem;
+        @media only screen and (max-width: 57em) {
+          font-size: 2rem;
+        }
       }
     }
   }

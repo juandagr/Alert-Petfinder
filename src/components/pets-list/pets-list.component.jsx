@@ -4,6 +4,9 @@ import "./pets-list.styles..scss";
 
 import PetCard from "../pet-card/pet-card.component";
 
+/**
+ * Component to display a list of PetCard components, it receives an array of pets
+ */
 const PetsList = ({ pets }) => (
   <div className="pets-list-container">
     <div className="pets-list">

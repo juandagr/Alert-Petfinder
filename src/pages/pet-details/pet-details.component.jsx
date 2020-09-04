@@ -74,26 +74,33 @@ class PetsDetails extends Component {
           )}
           <h2 className="contact-info">Contact info</h2>
           <div className="contact-container">
-            <div className="contact-container__detail">
-              <IoIosPin className="icon" />
-              <div className="address-text">
-                <p className="text">{details.contact.address.address1}</p>
-                <p className="text">
-                  {details.contact.address.city},{" "}
-                  {details.contact.address.state}{" "}
-                  {details.contact.address.postcode}
-                </p>
+            {details.contact.email ? (
+              <div className="contact-container__detail">
+                <IoIosPin className="icon" />
+                <div className="address-text">
+                  <p className="text">{details.contact.address.address1}</p>
+                  <p className="text">
+                    {details.contact.address.city},{" "}
+                    {details.contact.address.state}{" "}
+                    {details.contact.address.postcode}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="contact-container__detail">
-              <IoIosMail className="icon" />
-              <p className="text">{details.contact.email}</p>
-            </div>
+            ) : null}
 
-            <div className="contact-container__detail">
-              <IoMdCall className="icon" />
-              <p className="text">{details.contact.phone}</p>
-            </div>
+            {details.contact.email ? (
+              <div className="contact-container__detail">
+                <IoIosMail className="icon" />
+                <p className="text">{details.contact.email}</p>
+              </div>
+            ) : null}
+
+            {details.contact.phone ? (
+              <div className="contact-container__detail">
+                <IoMdCall className="icon" />
+                <p className="text">{details.contact.phone}</p>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

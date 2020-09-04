@@ -9,14 +9,26 @@ $color-primary: #ff7f00;
   padding: 5rem;
   color: $color-primary;
 
+  @media only screen and (max-width: 57em) {
+    padding: 1rem 0;
+  }
+
   .details-container {
     flex: 0 0 70%;
     display: flex;
     flex-direction: column;
     padding: 5rem;
 
+    @media only screen and (max-width: 57em) {
+      flex: 0 0 100%;
+    }
+
     .title {
       font-size: 6rem;
+
+      @media only screen and (max-width: 57em) {
+        text-align: center;
+      }
     }
 
     .icon {
@@ -26,17 +38,27 @@ $color-primary: #ff7f00;
 
     .breed-and-location {
       font-size: 3rem;
+      @media only screen and (max-width: 57em) {
+        text-align: center;
+      }
     }
 
     .description {
       font-size: 2rem;
       margin-top: 1rem;
+      @media only screen and (max-width: 57em) {
+        text-align: center;
+      }
     }
 
     .tags-container {
       display: flex;
       flex-wrap: wrap;
       margin-top: 1rem;
+
+      @media only screen and (max-width: 57em) {
+        justify-content: center;
+      }
 
       .tag {
         font-size: 1rem;
@@ -80,12 +102,21 @@ $color-primary: #ff7f00;
     .contact-info {
       font-size: 3rem;
       margin: 1rem 0;
+
+      @media only screen and (max-width: 57em) {
+        text-align: center;
+      }
     }
 
     .contact-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       font-size: 2rem;
+
+      @media only screen and (max-width: 57em) {
+        justify-content: center;
+      }
 
       .contact-container__detail {
         display: flex;
