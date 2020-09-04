@@ -1,3 +1,5 @@
+$color-primary: #ff7f00;
+
 .pet-details-page {
   grid-column: full-start / full-end;
   display: flex;
@@ -5,11 +7,20 @@
   justify-content: center;
   align-items: center;
   padding: 5rem;
-  color: #ff7f00;
+  color: $color-primary;
   font-size: 2rem;
 
   .carousel-container {
     flex: 0 0 30%;
+
+    .status {
+      font-size: 4rem;
+      font-weight: 900;
+      text-align: center;
+      background-color: $color-primary;
+      color: #fff;
+      padding: 1rem 0;
+    }
   }
 
   .details-container {
@@ -29,18 +40,23 @@
     .description {
       margin-top: 1rem;
     }
-
-    .environment-container {
+    .detail-lists-container {
       display: flex;
-      flex-direction: column;
-      margin-top: 2rem;
+      flex-wrap: wrap;
 
-      .attribute {
+      .environment-container {
         display: flex;
+        flex: 0 0 50%;
+        flex-direction: column;
+        margin-top: 2rem;
 
-        .status {
-          margin-right: 1rem;
-          font-size: 3rem;
+        .attribute {
+          display: flex;
+
+          .status {
+            margin-right: 1rem;
+            font-size: 3rem;
+          }
         }
       }
     }
@@ -52,11 +68,39 @@
 
       .tag {
         font-size: 1rem;
-        background-color: #ff7f00;
+        background-color: $color-primary;
         color: #fff;
         padding: 0.5rem 1rem;
         border-radius: 100px;
         margin-right: 1rem;
+      }
+    }
+
+    .status-text {
+      margin-top: 2rem;
+
+      .text-button {
+        &:link,
+        &:visited {
+          color: $color-primary;
+          display: inline-block;
+          text-decoration: none;
+          border-bottom: 1px solid $color-primary;
+          padding: 3px;
+          transition: all 0.2s;
+        }
+
+        &:hover {
+          background-color: $color-primary;
+          color: #fff;
+          transform: translateY(-2px);
+          box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+        }
+
+        &:active {
+          transform: translateY(0);
+          box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+        }
       }
     }
   }
