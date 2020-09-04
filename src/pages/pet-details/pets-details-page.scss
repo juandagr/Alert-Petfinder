@@ -111,7 +111,7 @@ $color-primary: #ff7f00;
     .contact-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       font-size: 2rem;
 
       @media only screen and (max-width: 57em) {

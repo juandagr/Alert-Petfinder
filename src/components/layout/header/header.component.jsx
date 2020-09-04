@@ -10,7 +10,12 @@ import React from "react";
 const Header = () => {
   return (
     <div className="header">
-      <p className="title">ALERT PETFINDER</p>
+      <Link className="title" to="/">
+        ALERT PETFINDER
+      </Link>
+      <Link className="title" to="/about">
+        About
+      </Link>
     </div>
   );
 };

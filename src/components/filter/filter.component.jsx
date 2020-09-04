@@ -9,8 +9,6 @@ import {
 } from "../../redux/pets/pets.actions";
 import { connect } from "react-redux";
 import {
-  selectCurrentPage,
-  selectTotalPets,
   selectAnimalTypes,
   selectCurrentPets,
   selectAnimalBreeds,

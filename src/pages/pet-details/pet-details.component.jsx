@@ -58,7 +58,12 @@ class PetsDetails extends Component {
             <p className="status-text">
               This pet is ready to be adopted, if you want more info please
               click
-              <a className="text-button" href={details.url} target="_blank">
+              <a
+                className="text-button"
+                href={details.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 here
               </a>
             </p>

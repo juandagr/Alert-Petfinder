@@ -4,13 +4,23 @@
 
   display: flex;
   justify-content: space-between;
-  height: 10rem;
+  height: 6rem;
 
   .title {
     color: #fff;
+    height: 100%;
     padding: 1.5rem 2rem;
     font-size: 2rem;
     align-self: center;
+    text-decoration: none;
+    border-bottom: 1px solid #ff7f00;
+
+    &:hover {
+      border-bottom: 1px solid #fff;
+      background-color: #fff;
+      color: #ff7f00;
+      border-bottom: 2px solid #ff7f00;
+    }
   }
 
   .options {
