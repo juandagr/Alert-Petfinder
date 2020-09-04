@@ -9,7 +9,13 @@ import { Carousel } from "react-responsive-carousel";
 
 import "./pets-details-page.scss";
 
-import { IoIosCheckmark, IoIosClose } from "react-icons/io";
+import {
+  IoIosCheckmark,
+  IoIosClose,
+  IoIosMail,
+  IoMdCall,
+  IoIosPin,
+} from "react-icons/io";
 
 /**
  * Component that display the details of a pet in a page
@@ -62,25 +68,25 @@ class PetsDetails extends Component {
             <div className="environment-container">
               <div className="attribute">
                 {details.attributes.house_trained ? (
-                  <IoIosCheckmark className="status" />
+                  <IoIosCheckmark className="icon" />
                 ) : (
-                  <IoIosClose className="status" />
+                  <IoIosClose className="icon" />
                 )}
                 <p>House trained</p>
               </div>
               <div className="attribute">
                 {details.attributes.spayed_neutered ? (
-                  <IoIosCheckmark className="status" />
+                  <IoIosCheckmark className="icon" />
                 ) : (
-                  <IoIosClose className="status" />
+                  <IoIosClose className="icon" />
                 )}
                 <p className="name">Spayed neutered</p>
               </div>
               <div className="attribute">
                 {details.attributes.special_needs ? (
-                  <IoIosClose className="status" />
+                  <IoIosCheckmark className="icon" />
                 ) : (
-                  <IoIosClose className="status" />
+                  <IoIosClose className="icon" />
                 )}
                 <p className="name">Special needs</p>
               </div>
@@ -88,25 +94,25 @@ class PetsDetails extends Component {
             <div className="environment-container">
               <div className="attribute">
                 {details.environment.cats ? (
-                  <IoIosCheckmark className="status" />
+                  <IoIosCheckmark className="icon" />
                 ) : (
-                  <IoIosClose className="status" />
+                  <IoIosClose className="icon" />
                 )}
                 <p>Cats</p>
               </div>
               <div className="attribute">
                 {details.environment.children ? (
-                  <IoIosCheckmark className="status" />
+                  <IoIosCheckmark className="icon" />
                 ) : (
-                  <IoIosClose className="status" />
+                  <IoIosClose className="icon" />
                 )}
                 <p className="name">Children</p>
               </div>
               <div className="attribute">
                 {details.environment.dogs ? (
-                  <IoIosClose className="status" />
+                  <IoIosCheckmark className="icon" />
                 ) : (
-                  <IoIosClose className="status" />
+                  <IoIosClose className="icon" />
                 )}
                 <p className="name">Dogs</p>
               </div>
@@ -118,6 +124,27 @@ class PetsDetails extends Component {
               here
             </a>
           </p>
+          <h2 className="contact-info">Contact info</h2>
+          <div className="contact-container">
+            <div className="address-container">
+              <p className="text">
+                <IoIosPin className="icon" />
+                {details.contact.address.address1}
+              </p>
+              <p className="text">
+                {details.contact.address.city}, {details.contact.address.state}{" "}
+                {details.contact.address.postcode}
+              </p>
+            </div>
+
+            <p className="text">
+              <IoIosMail className="icon" />
+              {details.contact.email}
+            </p>
+            <p className="text">
+              <IoMdCall className="icon" /> {details.contact.phone}
+            </p>
+          </div>
         </div>
       </div>
     );
