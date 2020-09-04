@@ -39,3 +39,8 @@ export const selectAnimalDetails = createSelector(
 export const selectPetsLoading = createSelector([selectPets], (petsState) =>
   petsState.petsList.length === 0 ? true : false
 );
+
+export const selectError = createSelector(
+  [selectPets],
+  (petsState) => petsState.error
+);

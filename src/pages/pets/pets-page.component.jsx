@@ -13,13 +13,14 @@ import {
   selectCurrentPage,
   selectTotalPets,
   selectCurrentPets,
+  selectError,
 } from "../../redux/pets/pets.selectors";
 
-import PetsList from "./../../components/pets-list/pets-list.component";
 import Pagination from "react-js-pagination";
 
 import Filter from "../../components/filter/filter.component";
 import PetListContainer from "../../components/pets-list/pets-list.container";
+import ErrorDisplay from "../../components/error-display/error-display.component";
 
 /**
  * Component thats display the list of pets in a page, this is the principal page
@@ -54,6 +55,7 @@ class PetsPage extends Component {
       selectCurrentPage,
       selectTotalPets,
       selectCurrentPets,
+      selectError,
     } = this.props;
     return (
       <div className="pets-list-page">
@@ -66,6 +68,8 @@ class PetsPage extends Component {
         <div className="sidebar">
           <Filter />
         </div>
+        {selectError ? <ErrorDisplay /> : null}
+
         <PetListContainer pets={selectCurrentPets} />
         <Pagination
           activePage={selectCurrentPage}
@@ -86,6 +90,7 @@ const mapStateToProps = createStructuredSelector({
   selectCurrentPage: selectCurrentPage,
   selectTotalPets: selectTotalPets,
   selectCurrentPets: selectCurrentPets,
+  selectError: selectError,
 });
 
 const mapDispatchToProps = (dispatch) => ({

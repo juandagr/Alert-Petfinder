@@ -1,0 +1,17 @@
+.error-container {
+  grid-column: content-start / content-end;
+  display: flex;
+
+  @media only screen and (max-width: 65.5em) {
+    grid-column: full-start / full-end;
+  }
+
+  p {
+    padding: 2rem;
+    font-size: 3rem;
+    color: #fff;
+    background-color: red;
+    justify-self: center;
+    align-self: center;
+  }
+}

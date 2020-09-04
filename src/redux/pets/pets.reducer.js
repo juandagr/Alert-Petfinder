@@ -34,24 +34,28 @@ const petsReducer = (state = INITIAL_STATE, action) => {
         isPetsFetching: false,
         currentPage: action.payload.pets.pagination.current_page,
         totalPets: action.payload.pets.pagination.total_count,
+        error: null,
       };
 
     case PetsTypes.GET_TYPES_SUCCESS:
       return {
         ...state,
         animalTypes: action.payload.animalTypes.data,
+        error: null,
       };
 
     case PetsTypes.GET_BREEDS_SUCCESS:
       return {
         ...state,
         animalBreeds: action.payload.animalBreeds.data,
+        error: null,
       };
 
     case PetsTypes.GET_DETAILS_SUCCESS:
       return {
         ...state,
         animalDetails: action.payload.animalDetails.data,
+        error: null,
       };
 
     case PetsTypes.GET_PETS_FAILURE:

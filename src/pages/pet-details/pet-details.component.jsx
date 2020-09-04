@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { selectAnimalDetails } from "../../redux/pets/pets.selectors";
+import {
+  selectAnimalDetails,
+  selectError,
+} from "../../redux/pets/pets.selectors";
 import { getAnimalDetailsStart } from "../../redux/pets/pets.actions";
 import { createStructuredSelector } from "reselect";
 
@@ -12,6 +15,7 @@ import { IoIosMail, IoMdCall, IoIosPin } from "react-icons/io";
 import CarouselDetails from "../../components/carousel/carousel.component";
 import DetailLists from "../../components/detail-lists/detail-lists.component";
 import { Link } from "react-router-dom";
+import ErrorDisplay from "../../components/error-display/error-display.component";
 
 /**
  * Component that display the details of a pet in a page
@@ -24,15 +28,15 @@ class PetsDetails extends Component {
   }
 
   componentDidMount() {
-    console.log("asdsadsdssd");
     const { getAnimalDetailsStart } = this.props;
     getAnimalDetailsStart(this.props.match.params.id);
   }
 
   render() {
-    const { details } = this.props;
+    const { details, selectError } = this.props;
     return (
       <div className="pet-details-page">
+        {selectError ? <ErrorDisplay /> : null}
         <CarouselDetails photos={details.photos} status={details.status} />
         <div className="details-container">
           <h1 className="title">{details.name}</h1>
@@ -115,6 +119,7 @@ class PetsDetails extends Component {
 
 const mapStateToProps = createStructuredSelector({
   details: selectAnimalDetails,
+  selectError: selectError,
 });
 
 const mapDispatchToProps = (dispatch) => ({

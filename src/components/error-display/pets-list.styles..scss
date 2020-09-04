@@ -1,0 +1,16 @@
+.pets-list-container {
+  grid-column: content-start / content-end;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  @media only screen and (max-width: 65.5em) {
+    grid-column: full-start / full-end;
+  }
+
+  .pets-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+}
