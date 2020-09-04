@@ -35,3 +35,7 @@ export const selectAnimalDetails = createSelector(
   [selectPets],
   (petsState) => petsState.animalDetails.animal
 );
+
+export const selectPetsLoading = createSelector([selectPets], (petsState) =>
+  petsState.petsList.length === 0 ? true : false
+);

@@ -19,6 +19,7 @@ import PetsList from "./../../components/pets-list/pets-list.component";
 import Pagination from "react-js-pagination";
 
 import Filter from "../../components/filter/filter.component";
+import PetListContainer from "../../components/pets-list/pets-list.container";
 
 /**
  * Component thats display the list of pets in a page, this is the principal page
@@ -65,7 +66,7 @@ class PetsPage extends Component {
         <div className="sidebar">
           <Filter />
         </div>
-        <PetsList pets={selectCurrentPets} />
+        <PetListContainer pets={selectCurrentPets} />
         <Pagination
           activePage={selectCurrentPage}
           itemsCountPerPage={this.state.petsPerPage}

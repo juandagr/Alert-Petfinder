@@ -24,13 +24,13 @@ class PetsDetails extends Component {
   }
 
   componentDidMount() {
+    console.log("asdsadsdssd");
     const { getAnimalDetailsStart } = this.props;
     getAnimalDetailsStart(this.props.match.params.id);
   }
 
   render() {
     const { details } = this.props;
-    console.log(details.photos);
     return (
       <div className="pet-details-page">
         <CarouselDetails photos={details.photos} status={details.status} />
