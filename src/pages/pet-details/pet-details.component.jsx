@@ -16,6 +16,7 @@ import {
   IoMdCall,
   IoIosPin,
 } from "react-icons/io";
+import CarouselDetails from "../../components/carousel/carousel.component";
 
 /**
  * Component that display the details of a pet in a page
@@ -37,16 +38,7 @@ class PetsDetails extends Component {
     console.log(details.photos);
     return (
       <div className="pet-details-page">
-        <div className="carousel-container">
-          <Carousel autoPlay infiniteLoop stopOnHover showThumbs={false}>
-            {details.photos.map((photo) => (
-              <div key={photo.large}>
-                <img src={photo.large} alt="photo1" />
-              </div>
-            ))}
-          </Carousel>
-          <p className="status">{details.status.toUpperCase()}</p>
-        </div>
+        <CarouselDetails photos={details.photos} status={details.status} />
         <div className="details-container">
           <h1 className="title">{details.name}</h1>
           <p className="breed-and-location">
