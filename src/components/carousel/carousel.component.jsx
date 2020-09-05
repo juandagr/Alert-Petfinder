@@ -10,13 +10,15 @@ import { Carousel } from "react-responsive-carousel";
 const CarouselDetails = ({ photos, status }) => (
   <div className="carousel-container">
     <Carousel autoPlay infiniteLoop stopOnHover showThumbs={false}>
-      {photos.map((photo) => (
-        <div key={photo.large}>
-          <img src={photo.large} alt="photo1" />
-        </div>
-      ))}
+      {photos
+        ? photos.map((photo) => (
+            <div key={photo.large}>
+              <img src={photo.large} alt="photo1" />
+            </div>
+          ))
+        : null}
     </Carousel>
-    <p className="status">{status.toUpperCase()}</p>
+    <p className="status">{status ? status.toUpperCase() : null}</p>
   </div>
 );
 
