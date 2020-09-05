@@ -13,6 +13,9 @@ const persistConfig = {
   withelist: ["pets"],
 };
 
+/**
+ * root reducer to combine all app reducers
+ */
 const rootReducer = combineReducers({
   pets: petsReducer,
 });

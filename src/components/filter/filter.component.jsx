@@ -15,6 +15,9 @@ import {
 } from "../../redux/pets/pets.selectors";
 import { createStructuredSelector } from "reselect";
 
+/**
+ * Component to apply filters to pet list
+ */
 class Filter extends React.Component {
   constructor(props) {
     super(props);

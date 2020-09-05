@@ -2,6 +2,9 @@ import * as petfinderApi from "../../petfinder-api/pets";
 import { getAnimalTypes } from "./pets.sagas";
 import { runSaga } from "redux-saga";
 
+/**
+ * suite to test sagas
+ */
 describe("sagas test suite", () => {
   describe("getAnimalTypes function", () => {
     it("should call api and dispatch success action", async () => {

@@ -36,6 +36,8 @@ class PetsPage extends Component {
 
   componentDidMount() {
     const { getPetsStart, getAnimalTypesStart } = this.props;
+
+    // load the animals
     getAnimalTypesStart();
     getPetsStart({ petsPerPage: this.state.petsPerPage, pageNumber: 1 });
   }
@@ -69,7 +71,6 @@ class PetsPage extends Component {
           <Filter />
         </div>
         {selectError ? <ErrorDisplay /> : null}
-
         <PetListContainer pets={selectCurrentPets} />
         <Pagination
           activePage={selectCurrentPage}

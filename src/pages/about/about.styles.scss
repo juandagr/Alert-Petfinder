@@ -8,6 +8,10 @@ $color-primary: #ff7f00;
   align-items: center;
   justify-items: center;
 
+  @media only screen and (max-width: 57em) {
+    padding: 1rem;
+  }
+
   .title {
     font-size: 8rem;
     color: $color-primary;
@@ -31,6 +35,10 @@ $color-primary: #ff7f00;
       color: $color-primary;
       width: 53%;
       text-align: center;
+
+      @media only screen and (max-width: 57em) {
+        width: 70%;
+      }
 
       .text-button {
         &:link,
