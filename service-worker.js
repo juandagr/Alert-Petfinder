@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https//juandagr.github.io/Alert-Petfinder/precache-manifest.c0de801172de05772bc4485e94299f28.js"
+  "/Alert-Petfinder/precache-manifest.a13b1503f86144eea41cad1f90e3f1a9.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("https//juandagr.github.io/Alert-Petfinder/index.html", {
+workbox.routing.registerNavigationRoute("/Alert-Petfinder/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
