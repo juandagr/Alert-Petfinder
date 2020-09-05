@@ -1,12 +1,13 @@
 $color-primary: #ff7f00;
 
-.pet-details-page {
+.pet-details-page,
+.pet-details-page-container {
   grid-column: full-start / full-end;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 3rem 5rem;
   color: $color-primary;
 
   @media only screen and (max-width: 57em) {

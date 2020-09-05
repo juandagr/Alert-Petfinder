@@ -35,83 +35,87 @@ class PetsDetails extends Component {
   render() {
     const { details, selectError } = this.props;
     return (
-      <div className="pet-details-page">
-        {selectError ? <ErrorDisplay /> : null}
-        <CarouselDetails photos={details.photos} status={details.status} />
-        <div className="details-container">
-          <h1 className="title">{details.name}</h1>
-          <p className="breed-and-location">
-            {details.breeds.primary} &mdash; {details.gender} &mdash;{" "}
-            {details.age} &mdash; {details.size}
-          </p>
-          {details.tags.length > 0 ? (
-            <div className="tags-container">
-              {details.tags.map((tag) => (
-                <p className="tag">{tag}</p>
-              ))}
-            </div>
-          ) : null}
-          <p className="description">
-            {details.description ? details.description : null}
-          </p>
-          <DetailLists
-            attributes={details.attributes}
-            environment={details.environment}
-          />
-          {details.status === "adoptable" ? (
-            <p className="status-text">
-              This pet is ready to be adopted, if you want more info please
-              click
-              <a
-                className="text-button"
-                href={details.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                here
-              </a>
-            </p>
-          ) : (
-            <p className="status-text">
-              This pet was adopted, but don't be discouraged, you can see more
-              pets in
-              <Link className="text-button" to="/">
-                our page
-              </Link>
-              , you sure will find the rigth for you
-            </p>
-          )}
-          <h2 className="contact-info">Contact info</h2>
-          <div className="contact-container">
-            {details.contact.email ? (
-              <div className="contact-container__detail">
-                <IoIosPin className="icon" />
-                <div className="address-text">
-                  <p className="text">{details.contact.address.address1}</p>
-                  <p className="text">
-                    {details.contact.address.city},{" "}
-                    {details.contact.address.state}{" "}
-                    {details.contact.address.postcode}
-                  </p>
+      <div className="pet-details-page-container">
+        {details ? (
+          <div className="pet-details-page">
+            {selectError ? <ErrorDisplay /> : null}
+            <CarouselDetails photos={details.photos} status={details.status} />
+            <div className="details-container">
+              <h1 className="title">{details.name}</h1>
+              <p className="breed-and-location">
+                {details.breeds.primary} &mdash; {details.gender} &mdash;{" "}
+                {details.age} &mdash; {details.size}
+              </p>
+              {details.tags.length > 0 ? (
+                <div className="tags-container">
+                  {details.tags.map((tag) => (
+                    <p className="tag">{tag}</p>
+                  ))}
                 </div>
-              </div>
-            ) : null}
+              ) : null}
+              <p className="description">
+                {details.description ? details.description : null}
+              </p>
+              <DetailLists
+                attributes={details.attributes}
+                environment={details.environment}
+              />
+              {details.status === "adoptable" ? (
+                <p className="status-text">
+                  This pet is ready to be adopted, if you want more info please
+                  click
+                  <a
+                    className="text-button"
+                    href={details.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here
+                  </a>
+                </p>
+              ) : (
+                <p className="status-text">
+                  This pet was adopted, but don't be discouraged, you can see
+                  more pets in
+                  <Link className="text-button" to="/">
+                    our page
+                  </Link>
+                  , you sure will find the rigth for you
+                </p>
+              )}
+              <h2 className="contact-info">Contact info</h2>
+              <div className="contact-container">
+                {details.contact.email ? (
+                  <div className="contact-container__detail">
+                    <IoIosPin className="icon" />
+                    <div className="address-text">
+                      <p className="text">{details.contact.address.address1}</p>
+                      <p className="text">
+                        {details.contact.address.city},{" "}
+                        {details.contact.address.state}{" "}
+                        {details.contact.address.postcode}
+                      </p>
+                    </div>
+                  </div>
+                ) : null}
 
-            {details.contact.email ? (
-              <div className="contact-container__detail">
-                <IoIosMail className="icon" />
-                <p className="text">{details.contact.email}</p>
-              </div>
-            ) : null}
+                {details.contact.email ? (
+                  <div className="contact-container__detail">
+                    <IoIosMail className="icon" />
+                    <p className="text">{details.contact.email}</p>
+                  </div>
+                ) : null}
 
-            {details.contact.phone ? (
-              <div className="contact-container__detail">
-                <IoMdCall className="icon" />
-                <p className="text">{details.contact.phone}</p>
+                {details.contact.phone ? (
+                  <div className="contact-container__detail">
+                    <IoMdCall className="icon" />
+                    <p className="text">{details.contact.phone}</p>
+                  </div>
+                ) : null}
               </div>
-            ) : null}
+            </div>
           </div>
-        </div>
+        ) : null}
       </div>
     );
   }
