@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Alert-Petfinder/precache-manifest.67c2ac2f3177609f5b7c7222b4645c32.js"
+  "/Alert-Petfinder/precache-manifest.c7af876c6ff543d6ff3c56e296b76518.js"
 );
 
 workbox.clientsClaim();
