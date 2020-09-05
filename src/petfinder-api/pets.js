@@ -14,7 +14,6 @@ const client = new Client({
  * function to get the animals using the params for filter
  */
 export const getAnimalsAPI = (params) => {
-  console.log(params, params);
   if (params.length > 0) {
     return client.animal.search();
   } else {
